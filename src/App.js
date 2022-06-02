@@ -9,14 +9,14 @@ function App() {
     console.log('APP RUNNING');
 
     const toggleParagraph = () => {
-      setShowParagraph(prevShowParagraph => !showParagraph);
+      setShowParagraph((prevShowParagraph) => !showParagraph);
     };
 
   return (
     <div className="app">
       <h1>Hi there!</h1>
-        <DemoOutput show={false}/>
-        <Button onClick={toggleParagraph}>Show Paragraph!</Button>
+        <DemoOutput show={false} />
+        <Button onClick={toggleParagraph}>Toggle Paragraph!</Button>
     </div>
   );
 }
